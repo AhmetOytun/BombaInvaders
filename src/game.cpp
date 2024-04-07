@@ -298,7 +298,6 @@ void Game::checkForHighScore(){
         if(highscorechanged == false){
             PlaySound(highscore);
             highscorechanged = true;
-            std::cout << "New Highscore: " << score << std::endl;
         }
         highScore = score;
         saveHighScoreToFile(highScore);
